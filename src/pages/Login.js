@@ -18,7 +18,7 @@ const Login = ({ history }) => {
     e.preventDefault();
     try {
       const res = await fetch(
-        "https://drinks-bar-55pnp.ondigitalocean.app/auth/local",
+        "https://drinks-backend-dsxdz.ondigitalocean.app/auth/local",
         {
           method: "POST",
           headers: {
