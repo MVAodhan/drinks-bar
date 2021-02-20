@@ -8,6 +8,8 @@ const Login = ({ history }) => {
 
   const { user, setUser } = useContext(UserContext);
 
+  const baseUrl = process.env.REACT_APP_BASEURL;
+
   useEffect(() => {
     if (user) {
       history.push("/");
@@ -17,19 +19,16 @@ const Login = ({ history }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(
-        "https://drinks-backend-dsxdz.ondigitalocean.app/auth/local",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            identifier: email,
-            password,
-          }),
-        }
-      );
+      const res = await fetch(`${baseUrl}/auth/local`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          identifier: email,
+          password,
+        }),
+      });
       const data = await res.json();
       console.log(data);
 
