@@ -1,0 +1,153 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.order-container {
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  margin-top: 10px;
+
+  .order {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.8rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .order-right {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .order-mid {
+      padding-left: 25px;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.table-details {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digit {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.check-icon {
+  margin-right: 10px;
+  fill: green;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 10px;
+  fill: red;
+  width: 40px;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.clr-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+
+  button {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.login-btn-link {
+  margin-top: 50px;
+  width: 50%;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #5288ecf8;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+.login-page {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .login-page-form {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .form-login {
+    background-color: #5288ecf8;
+    color: white;
+    border: none;
+    border-radius: 2px;
+  }
+  .form-input {
+    border-width: 0.5px;
+    border-color: rgba(250, 236, 236, 0.63);
+    border-radius: 2px;
+  }
+}
+
+.logout-btn {
+  border-radius: 6px;
+  border: none;
+  background-color: #5288ecf8;
+  color: #fff;
+  padding: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(134, 134, 134);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(82, 82, 82);
+}
