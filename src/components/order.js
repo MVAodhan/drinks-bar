@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
+import { AiFillCloseCircle } from "react-icons/ai";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
